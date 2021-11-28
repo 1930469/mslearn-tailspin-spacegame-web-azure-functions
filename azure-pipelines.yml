@@ -61,7 +61,6 @@ stages:
         publishWebProjects: false
         arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
         zipAfterPublish: true
-
     - publish: '$(Build.ArtifactStagingDirectory)'
       artifact: drop
 
@@ -106,8 +105,8 @@ stages:
               appSettings: |
                 [
                   {
-                    "name": "AppSettings:LeaderboardFunctionUrl",
-                    "value": "http://$(LeaderboardAppName).azurewebsites.net/api/LeaderboardFunction",
+                    "name": "AppSettings:tailspin-space-game-leaderboard-25178",
+                    "value": "http://$(tailspin-space-game-leaderboard-25178).azurewebsites.net/api/LeaderboardFunction",
                     "slotSetting": false
                   }
                 ]
